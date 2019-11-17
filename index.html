@@ -8,22 +8,31 @@
     <title>Momentum</title>
   </head>
   <body>
-    <div class="date-js"></div>
-    <div class="clock-js">
-      <h1>00:00</h1>
+    <!-- wrap -->
+    <div class="wrap">
+      <!-- date & clock -->
+      <div class="date date-js"></div>
+      <div class="clock clock-js">
+        <h1>00:00</h1>
+      </div>
+      <!-- greeting -->
+      <form class="greeting-form greeting-form-js">
+        <input type="text" class="input" placeholder="What's your name?" />
+      </form>
+      <h4 class="greeting greeting-js"></h4>
+      <!-- todo -->
+      <form class="todo-form todo-form-js">
+        <input type="text" class="input" placeholder="Write a to do" />
+      </form>
+      <ul class="todo-list todo-list-js"></ul>
+      <!-- weather -->
+      <div class="weather weather-js"></div>
     </div>
-    <form class="greeting-form greeting-form-js">
-      <input type="text" placeholder="What's your name?" />
-    </form>
-    <h4 class="greeting greeting-js"></h4>
-    <form class="todo-form-js">
-      <input type="text" placeholder="todo" />
-    </form>
-    <ul class="todo-list-js"></ul>
-    <div class="weather-js"></div>
+    <!-- /wrap -->
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/bg.js"></script>
   </body>
 </html>

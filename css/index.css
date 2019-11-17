@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto", "Noto Sans KR", serif;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
 .greeting-form,
 .greeting {
   display: none;
@@ -5,4 +23,91 @@
 
 .showing {
   display: block;
+}
+
+.date {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.clock {
+  font-size: 6rem;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+input:focus {
+  opacity: 1;
+}
+
+.greeting {
+  margin: 0 0 20px 0;
+  font-size: 2rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60%;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  line-height: 1.5;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.todo-list button {
+  margin-left: 5px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.weather {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bg {
+  background-color: #333;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeIn 0.5s linear;
 }
