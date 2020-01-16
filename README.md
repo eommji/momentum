@@ -1,5 +1,5 @@
 # momentum
-Cloning Chrome App with vanilla JS ([by nomadcoders](https://academy.nomadcoders.co/p/javascript-basics-for-absolute-beginners-kr))
+Cloning Chrome App with Javascript ([by nomadcoders](https://academy.nomadcoders.co/p/javascript-basics-for-absolute-beginners-kr))
 
 ## features
 - [X] Date
