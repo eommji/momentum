@@ -1,41 +1,43 @@
-const dateContainer = document.querySelector('.date-js'),
-      clockContainer = document.querySelector('.clock-js');
+const dateContainer = document.querySelector(".date-js"),
+  clockContainer = document.querySelector(".clock-js");
 
 function getTime() {
   const currentDate = new Date(),
-        year = currentDate.getFullYear(),
-        month = currentDate.getMonth() + 1,
-        date = currentDate.getDate(),
-        day = currentDate.getDay(),
-        hours = currentDate.getHours(),
-        minutes = currentDate.getMinutes(),
-        seconds = currentDate.getSeconds();
+    year = currentDate.getFullYear(),
+    month = currentDate.getMonth() + 1,
+    date = currentDate.getDate(),
+    day = currentDate.getDay(),
+    hours = currentDate.getHours(),
+    minutes = currentDate.getMinutes(),
+    seconds = currentDate.getSeconds();
   let dayText;
-  switch(day) {
+  switch (day) {
     case 0:
-      dayText = 'SUN';
+      dayText = "SUN";
       break;
     case 1:
-      dayText = 'MON';
+      dayText = "MON";
       break;
     case 2:
-      dayText = 'TUE';
+      dayText = "TUE";
       break;
     case 3:
-      dayText = 'WED';
+      dayText = "WED";
       break;
     case 4:
-      dayText = 'THU';
+      dayText = "THU";
       break;
     case 5:
-      dayText = 'FRI';
+      dayText = "FRI";
+      break;
     case 6:
-      dayText = 'SAT';
+      dayText = "SAT";
+      break;
   }
   dateContainer.innerText = `${year}. ${month}. ${date}. ${dayText}`;
   clockContainer.innerText = `${hours < 10 ? `0${hours}` : hours}:${
-                                minutes < 10 ? `0${minutes}` : minutes}:${
-                                seconds < 10 ? `0${seconds}` : seconds}`;
+    minutes < 10 ? `0${minutes}` : minutes
+  }:${seconds < 10 ? `0${seconds}` : seconds}`;
 }
 
 function init() {
